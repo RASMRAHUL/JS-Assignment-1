@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    
+    <h2>Program to find the factorial of a number :</h2>
+    <p style="display: inline;">Enter the Number:</p>
+    <input type="number" id="myNumber" value="number">
+
+<button onclick="fact()">Check Now</button>
+
+
+
+<h1 id="demo"></h1>
+
+
+<!-- Javascript part  -->
+<!-- For factorial finding : -->
+
+<script>
+function fact() {
+
+  let n = document.getElementById("myNumber").value;
+  let fact = 1;
+  if(n < 0)
+  {
+    document.getElementById("demo").innerHTML = "Invalid Number <br> Plz try again";
+  }
+  else if(n==0 || n==1 )
+  {
+    
+    document.getElementById("demo").innerText = fact ;
+
+  }
+  else
+  {
+    while(n>1)
+  {
+    fact =fact*n;
+    n--;
+  }
+  document.getElementById("demo").innerText = fact ;
+
+  }
+  
+  
+  
+}
+</script>
+    
+</body>
+</html>

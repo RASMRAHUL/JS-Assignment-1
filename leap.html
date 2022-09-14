@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap</title>
+</head>
+<body>
+    
+    <h2>Program to check whether the given Year is Leap year or not :</h2>
+    <p style="display: inline;">Enter the Year to check Leap Year or Not:</p>
+    <input type="number" id="myNumber" value="number">
+
+<button onclick="isLeap()">Check Now</button>
+
+
+
+<h1 id="demo"></h1>
+
+
+<!-- Javascript part  -->
+<!-- For checking the Leap Year or not: -->
+
+<script>
+function isLeap() {
+
+  let n = document.getElementById("myNumber").value;
+  if((n%100!=0 && n%4==0) || n%400==0)
+  	{
+    	document.getElementById("demo").innerHTML=` ${n } is a Leap Year `;
+    }
+    else
+    {
+    	document.getElementById("demo").innerHTML=` ${n } is not a Leap Year `;
+        }
+  
+}
+</script>
+    
+</body>
+</html>

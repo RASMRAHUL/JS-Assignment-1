@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+</head>
+<body>
+   
+  <!-- For temperature conversion from celcius to fahrenheit: -->
+<h2>Program to convert the Temperature from <sup>o</sup>C to <sup>o</sup>F and vice-versa :</h2>
+<p style="display: inline;">Enter the temperature in Celcius:</p>
+<input type="number" id="celcius" value="number">
+<button onclick="celcius()">convert now</button>
+<p id="fah" style="display: inline ;"> </p>
+<div style="display: inline;"><sup>o</sup>F</div>
+
+<br><br>
+<!-- For temperature conversion from fahrenheit to celcius: -->
+
+<p style="display: inline;">Enter the temperature in Fahrenheit:</p>
+<input type="number" id="fahrenheit" value="number">
+<button onclick="fahrenheit()">convert now</button>
+<p id="cel" style="display: inline ;"></p>
+<div style="display: inline;"><sup>o</sup>C</div>
+
+
+
+
+
+
+<!-- Javascript part  -->
+<!-- For Temperature converter from celcius to fahrenheit: -->
+
+<script>
+function celcius() {
+
+  let c = document.getElementById("celcius").value;
+  
+  document.getElementById("fah").innerText = (c * 9/5) + 32;
+
+  
+  
+}
+
+// Javascript part  
+//  For Temperature converter from  fahrenheit to  celcius : 
+
+function fahrenheit() {
+
+  let f = document.getElementById("fahrenheit").value;
+   
+ document.getElementById("cel").innerText = (f-32)*5/9;
+
+  
+  
+}
+</script>
+    
+</body>
+</html>
